@@ -29,5 +29,9 @@ jobs:
       # `package` runs the full lifecycle up to and including the test phase
       # (compile -> test -> package), so this single step both builds the
       # project and executes the JUnit tests via the Surefire plugin.
-      - name: Build and test with Maven
+      - name: Build and test L3 ci-demo (JUnit 5)
         run: mvn -B package --file L3/ci-demo/pom.xml
+
+      # L7 Testing Lab: JUnit 4 + Mockito tests for the Group/Ungroup logic.
+      - name: Build and test L7 group-tests (JUnit 4 + Mockito)
+        run: mvn -B package --file L7/group-tests/pom.xml
