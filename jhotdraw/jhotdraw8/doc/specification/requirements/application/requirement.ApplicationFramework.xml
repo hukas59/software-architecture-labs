@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @(#)requirement.ApplicationFramework.xml
+  ~ Copyright © The authors and contributors of JHotDraw. MIT License.
+  -->
+
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en"
+         xml:id="requirement.ApplicationFramework" role="requirement">
+    <title>Application Framework</title>
+    <para>The application framework</para>
+    <itemizedlist>
+        <listitem>
+            <para>must define a design for document-based applications,</para>
+        </listitem>
+        <listitem>
+            <para>must provide an API of the design,</para>
+        </listitem>
+        <listitem>
+            <para>must provide a reference implementation of the API.</para>
+        </listitem>
+    </itemizedlist>
+</section>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ @(#)Book.xml
+  ~ Copyright © The authors and contributors of JHotDraw. MIT License.
+  -->
+
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+  <info>
+    <title>JHotDraw 8: Software Specification</title>
+    <author>
+      <personname>
+        <firstname>Werner</firstname>
+        <surname>Randelshofer</surname>
+      </personname>
+    </author>
+    <copyright>
+      <year>2019</year>
+      <holder>The authors and contributors of JHotDraw</holder>
+    </copyright>
+  </info>
+
+  <chapter>
+    <title>Introduction</title>
+
+    <xi:include href="introduction/Purpose.xml"/>
+
+    <xi:include href="../general/introduction/Definitions.xml"/>
+
+    <xi:include href="../general/introduction/License.xml"/>
+
+    <xi:include href="../general/introduction/Resources.xml"/>
+
+    <xi:include href="introduction/References.xml"/>
+  </chapter>
+
+  <chapter>
+    <title>Overall description</title>
+
+    <xi:include href="overalldescription/ProductPerspective.xml"/>
+  </chapter>
+  <chapter>
+    <title>Requirements</title>
+
+    <section>
+      <title>Application Framework</title>
+
+      <xi:include href="figures/figure.req.ApplicationFramework.xml"/>
+
+      <xi:include href="figures/figure.req.UserInterfaceGuidelines.xml"/>
+
+      <xi:include href="requirements/application/requirement.ApplicationFramework.xml"/>
+
+      <xi:include href="requirements/application/requirement.UserInterfaceGuidelines.xml"/>
+
+      <xi:include href="requirements/application/requirement.JavaSE8.xml"/>
+
+      <xi:include href="requirements/application/requirement.JavaFX.xml"/>
+
+      <xi:include href="requirements/application/requirement.MenuBarItems.xml"/>
+
+      <xi:include href="requirements/application/requirement.MacOSMenuBarItems.xml"/>
+
+      <xi:include href="requirements/application/requirement.WindowsMenuBarItems.xml"/>
+
+      <xi:include href="requirements/application/requirement.KeyboardShortcuts.xml"/>
+    </section>
+
+    <section>
+      <title>Drawing Editor Framework</title>
+
+      <xi:include href="figures/figure.req.DrawingEditorFramework.xml"/>
+
+      <xi:include href="requirements/draw/requirement.DrawingEditorFramework.xml"/>
+
+      <xi:include href="requirements/draw/requirement.AutomaticLayout.xml"/>
+
+      <xi:include href="requirements/draw/requirement.CascadingStyleSheets.xml"/>
+
+      <xi:include href="requirements/draw/requirement.CascadingStyleSheetsStyleOrigin.xml"/>
+
+      <xi:include href="requirements/draw/requirement.Layers.xml"/>
+
+      <xi:include href="requirements/draw/requirement.Locking.xml"/>
+
+      <xi:include href="requirements/draw/requirement.Visibility.xml"/>
+
+      <xi:include href="requirements/draw/requirement.ZOrder.xml"/>
+
+      <xi:include href="requirements/draw/requirement.Grouping.xml"/>
+
+      <!--xi:include href="requirements/draw/requirement.SelectionTool.xml"/-->
+
+      <xi:include href="requirements/draw/requirement.ConstructiveAreaGeometry.xml"/>
+    </section>
+  </chapter>
+  <chapter>
+    <title>Design</title>
+
+    <section>
+      <title>Principles</title>
+      <xi:include href="figures/figure.bdd.DesignPrinciples.xml"/>
+      <xi:include href="figures/figure.bdd.DesignPatterns.xml"/>
+
+      <xi:include href="design/general/block.HighCohesion.xml"/>
+
+      <xi:include href="design/general/block.LooseCoupling.xml"/>
+
+      <xi:include href="design/general/block.FacadePattern.xml"/>
+    </section>
+    <section>
+      <title>Application Framework</title>
+
+      <xi:include href="figures/figure.bdd.ApplicationFramework.xml"/>
+
+      <xi:include href="design/application/block.MasterDetailsInspectorLayout.xml"/>
+    </section>
+
+    <section>
+      <title>Drawing Editor Framework</title>
+
+      <xi:include href="figures/figure.bdd.DrawingEditorFramework.xml"/>
+
+      <xi:include href="design/draw/block.Layers.xml"/>
+
+      <xi:include href="design/draw/block.DrawingTreeStructure.xml"/>
+
+      <xi:include href="design/draw/block.LayoutDependencies.xml"/>
+
+      <xi:include href="design/draw/block.TypeSafePropertyMap.xml"/>
+
+      <xi:include href="design/draw/block.StyleAttributesInspector.xml"/>
+    </section>
+
+    <section>
+      <title>Graph Library</title>
+
+      <xi:include href="design/graph/block.GraphLibraryForDrawingEditorFramework.xml"/>
+
+      <xi:include href="design/graph/block.GraphTheoryGraph.xml"/>
+
+      <xi:include href="design/graph/block.GraphTheoryDirectedGraph.xml"/>
+
+      <xi:include href="design/graph/block.GraphFacadeAPIs.xml"/>
+    </section>
+  </chapter>
+</book>

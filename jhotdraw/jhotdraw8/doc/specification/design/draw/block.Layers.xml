@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @(#)block.Layers.xml
+  ~ Copyright © The authors and contributors of JHotDraw. MIT License.
+  -->
+
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en" xml:id="block.Layers" role="block">
+  <title>Layers</title>
+
+  <para>We can support layers in a drawing by treating layers as a special
+    kind of figures.
+  </para>
+
+  <para>Since we want to represent a drawing as a tree structure, we can require the following:</para>
+  <itemizedlist>
+    <listitem>
+      <para>A <code>Layer</code> can only have of a parent of type <code>Drawing</code>.
+      </para>
+    </listitem>
+    <listitem>
+      <para>Any other type of <code>Figure</code> can only have of a parent
+        that is not of type <code>Drawing</code>.
+      </para>
+    </listitem>
+  </itemizedlist>
+
+  <section>
+    <title>Trade-off</title>
+    <para>The trade-off with this design is that we always must add at least one layer to a drawing,
+      even if we don't need layers in that specific drawing.
+    </para>
+  </section>
+</section>

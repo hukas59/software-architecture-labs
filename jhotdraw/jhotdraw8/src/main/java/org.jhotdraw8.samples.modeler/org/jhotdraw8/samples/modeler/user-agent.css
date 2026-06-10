@@ -1,0 +1,97 @@
+/*
+ * @(#)user-agent.css
+ * Copyright © 2021 The authors and contributors of JHotDraw. MIT License.
+ */
+MLDiagram {
+  kind-font: 12 Arial Bold;
+  name-font: 12 Arial;
+  padding: 4 14 4 6;
+  shape: "M0,0 20,0 20,10 10,20 0,20Z";
+  shape-slice: 0 10 10 0;
+}
+MLClassifier {
+  keyword-label-visible: true;
+  compartment-labels-visible: true;
+  compartment-label-font: 9 Arial;
+  keyword-label-font: 9 Arial;
+  name-font: bold 12 'Arial Bold';
+  font: 12 Arial;
+  padding: 4;
+  line-spacing: 4;
+  item-label-font: 12 Arial;
+  static-item-font: 12 Arial;
+  abstract-item-font: italic 12 'Arial Italic';
+  static-item-underline: true;
+}
+/** Block shows compartment labels, because there are so many possible compartments. */
+MLClassifier[keyword="block"] {
+}
+/** Class does not show compartment labels, because there are two compartments: attributes and operations. */
+MLClassifier[keyword="class"] {
+  compartment-labels-visible: false;
+  keyword-label-visible: false;
+}
+/** Class does not show compartment labels, because there are two compartments: attributes and operations. */
+MLClassifier[keyword="interface"] {
+  name-font: italic 12 'Arial Bold Italic';
+  compartment-labels-visible: false;
+}
+/** Requirement does not show compartment labels, because there is only one compartment: text. */
+MLClassifier[keyword="requirement"] {
+  compartment-labels-visible: false;
+}
+
+/** Ownership of an association is shown as a small filled circle
+ * at the other end of the association.
+ * See OMG UML 2.5.1 formal-17-12-05, chapter 11.5.4 Associations.
+ */
+MLEdge[source-owned="true"] {
+  marker-end-shape: "M -6,0 A 3,3 0 0 0 0,0 A 3,3 0 0 0 -6,0 Z";
+  marker-fill: black;
+}
+/** Ownership of an association is shown as a small filled circle
+ * at the other end of the association.
+ * See OMG UML 2.5.1 formal-17-12-05, chapter 11.5.4 Associations.
+ */
+MLEdge[target-owned="true"] {
+  marker-start-shape: "M -6,0 A 3,3 0 0 0 0,0 A 3,3 0 0 0 -6,0 Z";
+  marker-fill: black;
+}
+
+/** Dependency is shown as a dashed line with arrow head. */
+MLEdge[keyword="dependency"] {
+  stroke-dasharray: 5;
+  marker-end-shape: "M-10,-5 0,0 -10,5 M-10,0 0,0";
+  marker-fill: none;
+}
+
+/** Satisfies is shown as a dashed line with arrow head. */
+MLEdge[keyword="satisfies"] {
+  stroke-dasharray: 5;
+  marker-end-shape: "M-10,-5 0,0 -10,5 M-10,0 0,0";
+  marker-fill: none;
+}
+/** Generalization is shown as a solid line with white triangle head. */
+MLEdge[keyword="generalization"] {
+  marker-end-shape: "M-10,-5 0,0 -10,5 Z";
+  marker-fill: white;
+}
+/** Containment is shown as a solid line with crosshair head. */
+MLEdge[keyword="containment"] {
+  marker-end-shape: "M -12,0 A 6,6 0 0 0 0,0 A 6,6 0 0 0 -12,0 M -6,-6 -6,6 M -12,0 0,0";
+  marker-fill: white;
+}
+/** Aggregation is shown as a solid line with white diamond tail. */
+MLEdge[keyword="aggregation"] {
+  marker-start-shape: "M -18,0 -9,-5 0,0 -9,5 Z";
+  marker-fill: white;
+}
+MLEdge[keyword="aggregation"][target-owned="true"] {
+  marker-start-shape: "M -24,0 -15,-5 -6,0 -15,5 Z M -6,0 A 3,3 0 0 0 0,0 A 3,3 0 0 0 -6,0 Z";
+  marker-fill: white;
+}
+/** Compositon is shown as a solid line with black diamond tail. */
+MLEdge[keyword="composition"] {
+  marker-end-shape: "M -18,0 -9,-5 0,0 -9,5 Z";
+  marker-fill: black;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @(#)requirement.ZOrder.xml
+  ~ Copyright © The authors and contributors of JHotDraw. MIT License.
+  -->
+
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en" xml:id="requirement.ZOrder"
+         role="requirement">
+  <title>Z-Order</title>
+  <para>The drawing framework must support a z-ordering of figures.</para>
+  <para>Figures with higher z-order must be drawn above figures with lower z-order.</para>
+</section>

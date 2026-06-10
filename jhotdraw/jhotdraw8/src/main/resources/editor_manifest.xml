@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ @(#)editor_manifest.xml
+  ~ Copyright © 2021 The authors and contributors of JHotDraw. MIT License.
+  -->
+
+<Manifest xmlns="http://systransis.ch/xmlns/topology-editor-manifest">
+  <Property name="configfile" value="editor/editor_config_bam.xml"/>
+  <Property name="commentsfile" value="editor/comments.xml"/>
+  <Property name="layoutfile" value="editor/layout_horizontal.editor.xml"/>
+  <Property name="processimagedir" value="pi"/>
+</Manifest>

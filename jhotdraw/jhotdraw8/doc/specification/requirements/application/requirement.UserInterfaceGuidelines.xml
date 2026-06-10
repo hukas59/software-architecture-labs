@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @(#)requirement.UserInterfaceGuidelines.xml
+  ~ Copyright © The authors and contributors of JHotDraw. MIT License.
+  -->
+
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en" xml:id="requirement.UserInterfaceGuidelines"
+         role="requirement">
+    <title>User Interface Guidelines</title>
+    <para>The application framework must support the following user interface guidelines.</para>
+    <itemizedlist>
+        <listitem>
+            <para>Apple macOS Human Interface Guidelines <xref linkend="bib.ahig"/>.</para>
+        </listitem>
+        <listitem>
+            <para>Windows User Experience <xref linkend="bib.whig"/>.</para>
+        </listitem>
+    </itemizedlist>
+</section>

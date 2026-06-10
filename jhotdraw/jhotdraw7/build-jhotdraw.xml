@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Builds the "JHotDraw" jar file. -->
+<project name="JHotDraw" default="all" basedir="."
+         xmlns:if="ant:if"
+         xmlns:unless="ant:unless"
+>
+    <target name="init">
+        <!-- gobal build properties -->
+        <property file="build.properties"/>
+        
+        <!-- properties for copyright and versioning -->
+        <property name="name" value="${ant.project.name}"/>
+
+        <!-- build properties -->
+        <property name="lib" value="lib"/>
+        <property name="src" value="src/main/java"/>
+        <property name="build" value="build"/>
+        <property name="dist" value="dist/jhotdraw-${version}"/>
+        <property name="javadoc" value="dist/JHotDraw ${version}/javadoc"/>
+        <property name="doc" value="dist/JHotDraw ${version}/documentation"/>
+        <property name="docsrc" value="src/documentation"/>
+    </target>
+    <target name="clean" depends="init">
+        <delete dir="${build}" />
+        <delete dir="${dist}" />
+    </target>
+    <target depends="init" description="Javadoc for my API." name="javadoc">
+        <mkdir dir="${javadoc}"/>
+
+        <dirset dir="${src}" id="module-dirs">
+            <include name="*"/>
+        </dirset>
+        <pathconvert property="module-names" refid="module-dirs" pathsep=",">
+            <map from="${basedir}/${src}/" to=""/>
+        </pathconvert>
+        <echo message="module-names: ${module-names}"/>
+
+        <exec executable="javadoc">
+            <arg line="-header &quot;JHotDraw ${version}&quot;"/>
+            <arg line="-footer &quot;&lt;font size=-2>Copyright © ${author}.&lt;br>${license}.&lt;/font>&quot;"/>
+            <arg line="-windowtitle &quot;JHotDraw ${version}&quot;"/>
+            <arg line="-d &quot;${javadoc}&quot;"/>
+            <arg line="--module-source-path &quot;${src}&quot;"/>
+            <arg line="--module ${module-names}"/>
+        </exec>
+    </target>
+    <target name="compile" depends="init,clean">
+        <mkdir dir="${build}/classes"/>
+        <javac  destdir="${build}/classes"
+                modulesourcepath="${src}"
+                
+                debug="${javac.debug}"
+                optimize="${javac.optimize}"
+                encoding="${javac.encoding}"
+                includeantruntime="${javac.includeantruntime}"
+                source="${javac.source}"
+                target="${javac.target}"
+         >
+            <compilerarg value="-version"/>
+            <compilerarg value="-Xlint:all"/>
+            <include name="**/*.java"/>
+        </javac>
+        <copy todir="${build}/classes">
+            <fileset dir="${src}">
+                <exclude name="**/*.java"/>
+                <exclude name="**/.*"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <macrodef name="modular-jar">
+        <attribute name="module" />
+        <attribute name="mainclass" default="" />
+        <sequential>
+            <mkdir dir="${build}/modules"/>
+            <jar destfile="${build}/modules/@{module}.jar"
+                 basedir="${build}/classes/@{module}"
+            >
+
+                <manifest>
+                    <attribute name="Copyright" value="${author}"/>
+                    <attribute name="License" value="${license}"/>
+                    <attribute name="Implementation-Title" value="@{module}"/>
+                    <attribute name="Implementation-Version" value="${version}"/>
+                    <attribute name="Implementation-Vendor" value="${author}"/>
+                    <attribute name="Specification-Title" value="@{module}"/>
+                    <attribute name="Specification-Version" value="${version}"/>
+                    <attribute name="Specification-Vendor" value="${author}"/>
+                </manifest>
+            </jar>
+            <exec executable="jar" unless:blank="@{mainclass}">
+                <arg line="-f &quot;${build}/modules/@{module}.jar&quot;"/>
+                <arg line="-u"/>
+                <arg line="-e @{mainclass}"/>
+            </exec>
+
+            <jar destfile="${build}/sources/@{module}-src.jar"
+                 basedir="${src}/@{module}"
+            >
+            </jar>
+        </sequential>
+    </macrodef>
+
+    <target name="run-teddy" depends="init">
+        <java module="org.jhotdraw7.samples.teddy" modulepath="${build}/modules" fork="true">
+        </java>
+    </target>
+    <target name="run-svg" depends="init">
+        <java module="org.jhotdraw7.samples.svg" modulepath="${build}/modules" fork="true">
+        </java>
+    </target>
+    <target name="run-pert" depends="init">
+        <java module="org.jhotdraw7.samples.pert" modulepath="${build}/modules" fork="true">
+        </java>
+    </target>
+    <target name="run-net" depends="init">
+        <java module="org.jhotdraw7.samples.net" modulepath="${build}/modules" fork="true">
+        </java>
+    </target>
+    <target name="run-odg" depends="init">
+        <java module="org.jhotdraw7.samples.odg" modulepath="${build}/modules" fork="true">
+        </java>
+    </target>
+    <target name="run-draw" depends="init">
+        <java module="org.jhotdraw7.samples.draw" modulepath="${build}/modules" fork="true">
+        </java>
+    </target>
+
+    <target name="jar" depends="init,compile,do-jar">
+    </target>
+    <target name="do-jar" depends="init">
+        <modular-jar module="org.jhotdraw7.application"/>
+        <modular-jar module="org.jhotdraw7.draw"/>
+        <modular-jar module="org.jhotdraw7.nanoxml"/>
+        <modular-jar module="org.jhotdraw7.samples.draw" mainclass="org.jhotdraw.samples.draw.Main"/>
+        <modular-jar module="org.jhotdraw7.samples.misc"/>
+        <modular-jar module="org.jhotdraw7.samples.net" mainclass="org.jhotdraw.samples.net.Main"/>
+        <modular-jar module="org.jhotdraw7.samples.odg" mainclass="org.jhotdraw.samples.odg.Main"/>
+        <modular-jar module="org.jhotdraw7.samples.pert" mainclass="org.jhotdraw.samples.pert.Main"/>
+        <modular-jar module="org.jhotdraw7.samples.svg" mainclass="org.jhotdraw.samples.svg.Main"/>
+        <modular-jar module="org.jhotdraw7.samples.teddy" mainclass="org.jhotdraw.samples.teddy.Main"/>
+        <modular-jar module="net.n3.nanoxml"/>
+    </target>
+
+    <macrodef name="modular-bundle">
+    <attribute name="module" />
+        <attribute name="title" />
+    <attribute name="mainclass" default="" />
+        <sequential>
+        <mkdir dir="${dist}/bundles"/>
+        <exec executable="${jpackager}">
+            <env key="JAVA_HOME" path="${jdk}"/>
+            <arg value="create-installer"/>
+            <arg value="--output"/>
+            <arg path="${dist}/bundles"/>
+            <arg value="--name"/>
+            <arg value="@{title}"/>
+            <arg value="--module-path"/>
+            <arg path="${build}/modules"/>
+            <arg value="--identifier"/>
+            <arg value="@{module}"/>
+            <arg value="--module"/>
+            <arg value="@{module}"/>
+            <arg value="--mac-bundle-name"/>
+            <arg value="@{title}"/>
+            <arg value="--version"/>
+            <arg value="${version}"/>
+        </exec>
+        </sequential>
+    </macrodef>
+
+
+    <target name="do-bundle" depends="init">
+        <modular-bundle module="org.jhotdraw7.samples.draw" title="JHotDraw Draw"/>
+        <modular-bundle module="org.jhotdraw7.samples.net" title="JHotDraw Net"/>
+        <modular-bundle module="org.jhotdraw7.samples.pert" title="JHotDraw Pert"/>
+        <modular-bundle module="org.jhotdraw7.samples.svg" title="JHotDraw SVG"/>
+        <modular-bundle module="org.jhotdraw7.samples.teddy" title="JHotDraw Teddy"/>
+    </target>
+
+    <target name="bundle" depends="do-bundle,jar">
+    </target>
+
+    <target name="dist" depends="bundle">
+    </target>
+
+    <target name="documentation" depends="init">
+        <delete dir="${doc}"/>
+        <mkdir dir="${doc}"/>
+        <copy todir="${doc}">
+            <fileset dir="${docsrc}"/>
+        </copy>
+    </target>
+</project>

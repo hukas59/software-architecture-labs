@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:sourceforge" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="BuildServerSettings">
+    <option name="LOGIN" value="" />
+    <option name="SERVER_URL" value="http://buildserver" />
+    <option name="REMEMBER_ME" value="true" />
+    <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
+    <option name="INSPECTIONS_BUILD_TYPE_IDS" />
+    <option name="DUPLICATES_BUILD_TYPE_IDS" />
+    <option name="COVERAGE_SETTINGS" />
+    <option name="TEST_STATUS_ENABLED" value="true" />
+    <option name="TEST_STATUS_SHOW_SUCCESSFUL" value="false" />
+    <option name="POSTPONE_SUITABLE_CONFIGURATIONS_SEARCH" value="false" />
+    <option name="ARTIFACTS_BUILD_TYPE_IDS" />
+    <option name="PERFORM_COMMIT_IF_SUCCESSFUL" value="true" />
+    <option name="PERFORM_COMMIT_IF_NO_NEW_FAILED_TESTS" value="false" />
+    <option name="REQUEST_CONFIRMATON" value="false" />
+    <option name="PRE_TESTED_COMMIT" value="true" />
+    <option name="FILTER_BY_STATUS" value="false" />
+    <option name="FILTER_MARKED_AS_FIXED" value="false" />
+    <option name="SHOW_CLOSE_PROMPT" value="true" />
+    <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
+    <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13fe2693-250d-4562-87a2-5c5fde983d66" name="Default" comment="Updates build scripts.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jhotdraw8/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../jhotdraw8/build.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jhotdraw8/src/main/java/org.jhotdraw8.application/org/jhotdraw8/collection/IndexedHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jhotdraw8/src/main/java/org.jhotdraw8.application/org/jhotdraw8/collection/IndexedHashSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jhotdraw8/src/main/java/org.jhotdraw8.application/org/jhotdraw8/collection/IndexedSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jhotdraw8/src/main/java/org.jhotdraw8.application/org/jhotdraw8/collection/IndexedArraySet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jhotdraw8/src/main/java/org.jhotdraw8.application/org/jhotdraw8/tree/ChildList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jhotdraw8/src/main/java/org.jhotdraw8.application/org/jhotdraw8/tree/ChildList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jhotdraw8/src/test/java/org.jhotdraw8.application/org/jhotdraw8/collection/IndexedSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jhotdraw8/src/test/java/org.jhotdraw8.application/org/jhotdraw8/collection/IndexedArraySetTest.java" afterDir="false" />
+    </list>
+    <list id="6c3f85af-290e-4ea4-a299-932234f5731b" name="IDEA" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1P5xXk2Vep19FNKYPiO4Br88WBb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="flattenModules" value="true" />
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.24822696" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/jhotdraw.samples.teddy/classes/org/jhotdraw/samples/teddy" />
+      <recent name="$PROJECT_DIR$/src/jhotdraw.samples.teddy/resources/org/jhotdraw/samples/teddy" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/jhotdraw7.samples.svg/src/org/jhotdraw/samples/svg" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.jhotdraw.nanoxml" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.jhotdraw.app.action.file" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/jhotdraw.application/org/jhotdraw/gui/plaf/palette/images" />
+      <recent name="$PROJECT_DIR$/src/jhotdraw.util/classes" />
+      <recent name="$PROJECT_DIR$/src/app/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SVG">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="org.jhotdraw7.nanoxml" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="org.jhotdraw7.nanoxml" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Draw" />
+      <item itemvalue="Application.Net" />
+      <item itemvalue="Application.Pert" />
+      <item itemvalue="Application.SVG" />
+      <item itemvalue="Application.ODG" />
+      <item itemvalue="Application.Teddy" />
+    </list>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR,SHOW_INHERITED" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13fe2693-250d-4562-87a2-5c5fde983d66" name="Default" comment="" />
+      <changelist id="6c3f85af-290e-4ea4-a299-932234f5731b" name="IDEA" comment="" />
+      <created>1537522895444</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537522895444</updated>
+      <workItem from="1546867049568" duration="90000" />
+    </task>
+    <task id="LOCAL-00001" summary="Updates to Java 11.">
+      <created>1538735869492</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538735869492</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Updates to Java 11.">
+      <created>1538735878498</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538735878499</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updates to Java 11.">
+      <created>1538735969793</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1538735969793</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Minor fixes.">
+      <created>1538758427958</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538758427958</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updates to Java 11.">
+      <created>1543956400163</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1543956400163</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updates to Java 11.">
+      <created>1543956414749</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1543956414749</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Renames ActivityViewController to Activity.">
+      <created>1544093243590</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1544093243590</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updates documentation.">
+      <created>1544093257028</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1544093257028</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updates documentation.">
+      <created>1544093270490</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1544093270490</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updates license headers.">
+      <created>1544093399233</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1544093399233</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixes javadoc comments.">
+      <created>1544097851232</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1544097851232</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Adds black and white colors to palette.">
+      <created>1544104705635</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1544104705635</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Accesses resources via &quot;Label&quot; classes rather than directly instantiating a ResourceBundleUtil.">
+      <created>1544104743522</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544104743522</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Renames Label classes to make them easier distinguishable.">
+      <created>1544105835869</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1544105835870</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Renames Label classes to make them easier distinguishable.">
+      <created>1544107505875</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1544107505875</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Renames JSR 305 classes due to licensing issues.">
+      <created>1545503090987</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1545503090987</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Renames JSR 305 classes due to licensing issues.">
+      <created>1545503109634</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1545503109634</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Renames modules to prevent name clashes.">
+      <created>1545550855477</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1545550855477</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixes build script.">
+      <created>1545551555678</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1545551555678</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Fixes build script.">
+      <created>1545552303465</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1545552303465</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Opens packages.">
+      <created>1545653465698</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1545653465698</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Fixes Intellij modules.&#10;Adds &quot;bundle&quot; target to build-jhotdraw.xml">
+      <created>1546339518240</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1546339518240</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Excludes dist directory.">
+      <created>1546343245711</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1546343245711</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Updates build scripts.">
+      <created>1551355096497</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1551355096497</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Fixes instantiation of XMLParserFactory.">
+      <created>1580543662807</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1580543662807</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Adds &quot;Revert&quot; action.">
+      <created>1580557906890</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1580557906890</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Pretty prints SVG when saving.">
+      <created>1580558516154</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1580558516154</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Image output format uses canvas width/height to determine the size of the output image.">
+      <created>1591546925581</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1591546925581</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="90000" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Minor fixes." />
+    <MESSAGE value="Updates to Java 11." />
+    <MESSAGE value="Renames ActivityViewController to Activity." />
+    <MESSAGE value="Updates documentation." />
+    <MESSAGE value="Updates license headers." />
+    <MESSAGE value="Fixes javadoc comments." />
+    <MESSAGE value="Adds black and white colors to palette." />
+    <MESSAGE value="Accesses resources via &quot;Label&quot; classes rather than directly instantiating a ResourceBundleUtil." />
+    <MESSAGE value="Renames Label classes to make them easier distinguishable." />
+    <MESSAGE value="Renames JSR 305 classes due to licensing issues." />
+    <MESSAGE value="Renames modules to prevent name clashes." />
+    <MESSAGE value="Fixes build script." />
+    <MESSAGE value="Opens packages." />
+    <MESSAGE value="Fixes Intellij modules.&#10;Adds &quot;bundle&quot; target to build-jhotdraw.xml" />
+    <MESSAGE value="Excludes dist directory." />
+    <MESSAGE value="Updates build scripts." />
+    <MESSAGE value="Fixes instantiation of XMLParserFactory." />
+    <MESSAGE value="Adds &quot;Revert&quot; action." />
+    <MESSAGE value="Pretty prints SVG when saving." />
+    <MESSAGE value="Image output format uses canvas width/height to determine the size of the output image." />
+    <option name="LAST_COMMIT_MESSAGE" value="Image output format uses canvas width/height to determine the size of the output image." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="895" y="258" key="#xdebugger.evaluate" timestamp="1591546642098">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state x="895" y="258" key="#xdebugger.evaluate/0.23.2048.1129/480.1175.1440.823@0.23.2048.1129" timestamp="1591546642098" />
+    <state x="522" y="123" key="CommitChangelistDialog2" timestamp="1591546925404">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state x="522" y="123" key="CommitChangelistDialog2/0.23.2048.1129/480.1175.1440.823@0.23.2048.1129" timestamp="1591546925404" />
+    <state x="536" y="123" width="1193" height="850" key="DiffContextDialog" timestamp="1591546906499">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state x="536" y="123" width="1193" height="850" key="DiffContextDialog/0.23.2048.1129/480.1175.1440.823@0.23.2048.1129" timestamp="1591546906499" />
+    <state width="928" height="346" key="GridCell.Tab.0.bottom" timestamp="1591558403008">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state width="928" height="346" key="GridCell.Tab.0.bottom/0.23.2048.1129/480.1175.1440.822@0.23.2048.1129" timestamp="1591558403008" />
+    <state width="928" height="346" key="GridCell.Tab.0.bottom/0.23.2048.1129/480.1175.1440.823@0.23.2048.1129" timestamp="1591546880995" />
+    <state width="928" height="346" key="GridCell.Tab.0.center" timestamp="1591558403007">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state width="928" height="346" key="GridCell.Tab.0.center/0.23.2048.1129/480.1175.1440.822@0.23.2048.1129" timestamp="1591558403007" />
+    <state width="928" height="346" key="GridCell.Tab.0.center/0.23.2048.1129/480.1175.1440.823@0.23.2048.1129" timestamp="1591546880994" />
+    <state width="928" height="346" key="GridCell.Tab.0.left" timestamp="1591558403007">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state width="928" height="346" key="GridCell.Tab.0.left/0.23.2048.1129/480.1175.1440.822@0.23.2048.1129" timestamp="1591558403007" />
+    <state width="928" height="346" key="GridCell.Tab.0.left/0.23.2048.1129/480.1175.1440.823@0.23.2048.1129" timestamp="1591546880994" />
+    <state width="928" height="346" key="GridCell.Tab.0.right" timestamp="1591558403007">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state width="928" height="346" key="GridCell.Tab.0.right/0.23.2048.1129/480.1175.1440.822@0.23.2048.1129" timestamp="1591558403007" />
+    <state width="928" height="346" key="GridCell.Tab.0.right/0.23.2048.1129/480.1175.1440.823@0.23.2048.1129" timestamp="1591546880995" />
+    <state width="928" height="346" key="GridCell.Tab.1.bottom" timestamp="1591558403009">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state width="928" height="346" key="GridCell.Tab.1.bottom/0.23.2048.1129/480.1175.1440.822@0.23.2048.1129" timestamp="1591558403009" />
+    <state width="928" height="346" key="GridCell.Tab.1.bottom/0.23.2048.1129/480.1175.1440.823@0.23.2048.1129" timestamp="1591546880997" />
+    <state width="928" height="346" key="GridCell.Tab.1.center" timestamp="1591558403008">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state width="928" height="346" key="GridCell.Tab.1.center/0.23.2048.1129/480.1175.1440.822@0.23.2048.1129" timestamp="1591558403008" />
+    <state width="928" height="346" key="GridCell.Tab.1.center/0.23.2048.1129/480.1175.1440.823@0.23.2048.1129" timestamp="1591546880996" />
+    <state width="928" height="346" key="GridCell.Tab.1.left" timestamp="1591558403008">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state width="928" height="346" key="GridCell.Tab.1.left/0.23.2048.1129/480.1175.1440.822@0.23.2048.1129" timestamp="1591558403008" />
+    <state width="928" height="346" key="GridCell.Tab.1.left/0.23.2048.1129/480.1175.1440.823@0.23.2048.1129" timestamp="1591546880996" />
+    <state width="928" height="346" key="GridCell.Tab.1.right" timestamp="1591558403008">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state width="928" height="346" key="GridCell.Tab.1.right/0.23.2048.1129/480.1175.1440.822@0.23.2048.1129" timestamp="1591558403008" />
+    <state width="928" height="346" key="GridCell.Tab.1.right/0.23.2048.1129/480.1175.1440.823@0.23.2048.1129" timestamp="1591546880997" />
+    <state x="732" y="288" key="Vcs.Push.Dialog.v2" timestamp="1591546930519">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state x="732" y="288" key="Vcs.Push.Dialog.v2/0.23.2048.1129/480.1175.1440.823@0.23.2048.1129" timestamp="1591546930519" />
+    <state x="797" y="256" width="670" height="676" key="search.everywhere.popup" timestamp="1591546744183">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state x="797" y="256" width="670" height="676" key="search.everywhere.popup/0.23.2048.1129/480.1175.1440.823@0.23.2048.1129" timestamp="1591546744183" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24822696" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24822696" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24822696" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24822696" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>jhotdraw7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24822696" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>org.openjfx:javafx-controls:11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24822696" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

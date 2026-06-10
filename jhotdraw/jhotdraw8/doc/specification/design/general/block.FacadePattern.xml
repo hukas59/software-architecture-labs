@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @(#)block.FacadePattern.xml
+  ~ Copyright © The authors and contributors of JHotDraw. MIT License.
+  -->
+
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xml:id="block.FacadePattern" role="block">
+  <title>Facade Pattern</title>
+
+  <xi:include href="../../figures/figure.cd.FacadePattern.xml"/>
+
+  <para>
+    A facade provides a unified interface to a set of interfaces in a subsystem.
+  </para>
+
+  <section>
+    <title>Trade-off</title>
+
+    <para>
+      A facade allows to conveniently pass a subsystem around as a single object.
+    </para>
+
+    <para>
+      A facade allows to hide the structure of the subsystem.
+    </para>
+
+    <para>
+      A facade allows to make the subsystem easier to use.
+    </para>
+
+    <para>
+      A facade adds a level of indirection that may increase the program complexity.
+    </para>
+
+    <para>
+      A facade adds a level of indirection that may impose a performance hit.
+    </para>
+  </section>
+
+</section>

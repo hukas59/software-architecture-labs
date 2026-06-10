@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @(#)ProductPerspective.xml
+  ~ Copyright © The authors and contributors of JHotDraw. MIT License.
+  -->
+
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en">
+<title>Product Perspective</title>
+  <para>"JHotDraw 8" is an object oriented framework for developing drawing editors in the Java programming
+    language.</para>
+
+  <para>It consists of two independent frameworks,
+    and a number of demos ("samples"), which demonstrate typical uses of the framework.</para>
+
+  <para>Frameworks:</para>
+  <itemizedlist>
+    <listitem><para>the "Drawing Editor Framework"</para></listitem>
+    <listitem><para>the "Application Framework"</para></listitem>
+  </itemizedlist>
+
+  <para>Example programs:</para>
+  <itemizedlist>
+    <listitem>
+      <para>the "Mini" examples</para>
+    </listitem>
+    <listitem>
+      <para>the "Grapher" example</para>
+    </listitem>
+    <listitem>
+      <para>the "Modeler" example</para>
+    </listitem>
+    <listitem>
+      <para>the "Teddy" example</para>
+    </listitem>
+  </itemizedlist>
+
+  <para>The "Drawing Editor Framework" can be used to realize drawing
+    editors for computer aided design and for artistic drawings.
+    Drawings can be animated and interactive. It is possible to back a drawing with
+    a data model so that a drawing editor can be used as a user interface
+    for the data model.</para>
+
+  <para>The "Application Framework" can be used to create document-based
+    applications that comply to platform-specific user interface guidelines.
+    Such as <xref linkend="bib.ahig"/> and <xref linkend="bib.whig"/>.</para>
+
+  <para>The "Mini" examples demonstrate small use cases from both frameworks.</para>
+
+  <para>The "Grapher" example demonstrate a working drawing editor application. It focuses on many use cases
+    of the application framework and the drawing framework.
+    It exercises the "simple" implementation classes that are provided with the drawing framework.
+  </para>
+
+  <para>The "Modeler" example demonstrate a working drawing editor application. It focuses on many use cases
+    of the application framework and the drawing framework.
+    It adds implementation classes that exercise the extensibility of the drawing framework.
+  </para>
+
+  <para>The "Teddy" example demonstrates a working text editor. It focuses on the application framework.
+    It exercises the "simple" implementation classes that are provided with the application framework.
+  </para>
+
+</section>
+

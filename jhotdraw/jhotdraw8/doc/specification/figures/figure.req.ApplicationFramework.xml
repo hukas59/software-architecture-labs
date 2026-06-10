@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @(#)figure.req.ApplicationFramework.xml
+  ~ Copyright © The authors and contributors of JHotDraw. MIT License.
+  -->
+
+<figure xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en"
+        xml:id="figure.req.ApplicationFramework">
+  <title>SysML Requirements Diagram: Application Framework</title>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="figures/req.ApplicationFramework.svg" format="SVG"/>
+    </imageobject>
+    <textobject>
+      <phrase>This diagram shows the top-level requirements for the application framework.</phrase>
+    </textobject>
+  </mediaobject>
+</figure>

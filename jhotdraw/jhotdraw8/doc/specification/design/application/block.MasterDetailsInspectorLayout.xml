@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @(#)block.MasterDetailsInspectorLayout.xml
+  ~ Copyright © The authors and contributors of JHotDraw. MIT License.
+  -->
+
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en" xml:id="block.MasterDetailsInspectorLayout"
+         role="block">
+  <title>Master-Details-Inspector Layout</title>
+
+  <para>The master-details-inspector layout is a layout that consists of the following three panes:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>The master pane in the left area of the window</para>
+      <para>A master pane is a control that displays a collection of objects
+        from which one can be selected.
+      </para>
+    </listitem>
+    <listitem>
+      <para>The details pane in the center area of the window</para>
+      <para>A details pane is a control that displays the selected object from the master pane.
+        The object can be structured from which one or multiple elements can be selected.
+      </para>
+    </listitem>
+    <listitem>
+      <para>The inspector pane in the right area of the window</para>
+      <para>An inspector pane is a control that displays properties of the current
+        selection in the details pane.
+      </para>
+    </listitem>
+  </itemizedlist>
+
+  <para>The master-details-inspector layout is used by many applications, and thus is well known
+    and understood by most users.
+  </para>
+
+  <para>We can implement this layout JavaFX by following these steps:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>For each component (master pane, detail pane, inspector pane) we create a FXML
+        file for the layout, and a JavaFX controller class: MasterPaneController,
+        DetailsPaneController, InspectorPaneController.
+      </para>
+    </listitem>
+    <listitem>
+      <para>We add a List control (or Table or Tree control) to the MasterPaneController.
+      </para>
+    </listitem>
+    <listitem>
+      <para>We expose the currently selected item in the master pane
+        with an ObjectProperty in the MasterPaneController.
+      </para>
+    </listitem>
+    <listitem>
+      <para>We expose the currently shown object in the details pane
+        with an ObjectProperty in the DetailsPaneController.
+      </para>
+    </listitem>
+    <listitem>
+      <para>We expose the current selection in the details pane
+        with an ObservableList in the DetailsPaneController.
+      </para>
+    </listitem>
+    <listitem>
+      <para>We expose the currently inspected selection in the inspector pane
+        with an ObservableListProperty in the InspectorPaneController.
+      </para>
+    </listitem>
+    <listitem>
+      <para>We bind the exposed properties together.</para>
+    </listitem>
+  </itemizedlist>
+
+
+  <para>We can alter this layout in various ways:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>We can omit the master pane, which leaves us with a details-inspector layout.</para>
+    </listitem>
+    <listitem>
+      <para>We can omit the inspector pane, which leaves us with a master-details layout.</para>
+    </listitem>
+    <listitem>
+      <para>We can enable multiple selection in the master pane, which turns the object that is
+        displayed in the details pane into a collection.
+      </para>
+    </listitem>
+    <listitem>
+      <para>We can show properties of other objects in the inspector pane.</para>
+    </listitem>
+    <listitem>
+      <para>The window can contain more than one inspector pane.</para>
+    </listitem>
+  </itemizedlist>
+
+</section>
