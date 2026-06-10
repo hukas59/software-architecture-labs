@@ -1,4 +1,4 @@
-# Software Architecture Labs — Lab 1
+# Software Architecture Labs — L2
 
 **Feature under study:** Group / Ungroup figures (JHotDraw 7)
 

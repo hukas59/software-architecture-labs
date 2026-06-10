@@ -1,0 +1,35 @@
+name: CI
+
+# Continuous Integration pipeline for the Software Architecture Labs project.
+# Builds the JHotDraw 7 module with Maven and runs its test phase on every
+# push to main and on every pull request.
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build & test (Maven)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # JHotDraw 7 targets Java 1.6 source/bytecode, so build on a JDK that
+      # still accepts that source level. Temurin 8 is used here.
+      - name: Set up JDK 8 (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '8'
+          cache: maven
+
+      # `package` runs the full lifecycle up to and including the test phase
+      # (compile -> test -> package), so this single step both builds the
+      # project and executes any tests via the Surefire plugin.
+      - name: Build and test with Maven
+        run: mvn -B package --file jhotdraw/jhotdraw7/pom.xml
