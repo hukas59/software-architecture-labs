@@ -1,0 +1,48 @@
+package com.example.labs.group.bdd;
+
+import com.example.labs.group.FigureGroup;
+import com.example.labs.group.GroupingService;
+import com.example.labs.group.SimpleDrawing;
+import com.tngtech.jgiven.Stage;
+import com.tngtech.jgiven.annotation.ProvidedScenarioState;
+import com.tngtech.jgiven.annotation.Quoted;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/** The "Given" stage: sets up the drawing and selection for a scenario. */
+public class GivenDrawing extends Stage<GivenDrawing> {
+
+    @ProvidedScenarioState
+    SimpleDrawing drawing = new SimpleDrawing();
+
+    @ProvidedScenarioState
+    GroupingService service = new GroupingService();
+
+    @ProvidedScenarioState
+    List<String> selectedFigures = new ArrayList<>();
+
+    @ProvidedScenarioState
+    FigureGroup existingGroup;
+
+    public GivenDrawing a_drawing_with_figures(@Quoted String... figures) {
+        for (String figure : figures) {
+            drawing.add(figure);
+            selectedFigures.add(figure);
+        }
+        return self();
+    }
+
+    public GivenDrawing an_empty_drawing() {
+        return self();
+    }
+
+    public GivenDrawing a_drawing_containing_a_group_of(@Quoted String... figures) {
+        existingGroup = new FigureGroup();
+        for (String figure : figures) {
+            existingGroup.add(figure);
+        }
+        drawing.add(existingGroup);
+        return self();
+    }
+}

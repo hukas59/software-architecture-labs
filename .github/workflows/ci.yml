@@ -35,3 +35,7 @@ jobs:
       # L7 Testing Lab: JUnit 4 + Mockito tests for the Group/Ungroup logic.
       - name: Build and test L7 group-tests (JUnit 4 + Mockito)
         run: mvn -B package --file L7/group-tests/pom.xml
+
+      # L9 BDD Lab: JGiven + AssertJ Given-When-Then scenarios.
+      - name: Build and test L9 bdd-tests (JGiven + AssertJ)
+        run: mvn -B package --file L9/bdd-tests/pom.xml
