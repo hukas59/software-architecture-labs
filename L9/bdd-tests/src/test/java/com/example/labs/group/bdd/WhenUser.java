@@ -6,28 +6,29 @@ import com.example.labs.group.SimpleDrawing;
 import com.tngtech.jgiven.Stage;
 import com.tngtech.jgiven.annotation.ExpectedScenarioState;
 import com.tngtech.jgiven.annotation.ProvidedScenarioState;
+import com.tngtech.jgiven.annotation.ScenarioState.Resolution;
 
 import java.util.List;
 
 /** The "When" stage: performs the group / ungroup action. */
 public class WhenUser extends Stage<WhenUser> {
 
-    @ExpectedScenarioState
+    @ExpectedScenarioState(resolution = Resolution.NAME)
     SimpleDrawing drawing;
 
-    @ExpectedScenarioState
+    @ExpectedScenarioState(resolution = Resolution.NAME)
     GroupingService service;
 
-    @ExpectedScenarioState
+    @ExpectedScenarioState(resolution = Resolution.NAME)
     List<String> selectedFigures;
 
-    @ExpectedScenarioState
+    @ExpectedScenarioState(resolution = Resolution.NAME)
     FigureGroup existingGroup;
 
-    @ProvidedScenarioState
+    @ProvidedScenarioState(resolution = Resolution.NAME)
     FigureGroup createdGroup;
 
-    @ProvidedScenarioState
+    @ProvidedScenarioState(resolution = Resolution.NAME)
     List<String> released;
 
     public WhenUser I_group_the_selected_figures() {

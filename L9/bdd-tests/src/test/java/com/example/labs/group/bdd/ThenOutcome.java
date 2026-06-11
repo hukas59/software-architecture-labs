@@ -5,6 +5,7 @@ import com.example.labs.group.SimpleDrawing;
 import com.tngtech.jgiven.Stage;
 import com.tngtech.jgiven.annotation.ExpectedScenarioState;
 import com.tngtech.jgiven.annotation.Quoted;
+import com.tngtech.jgiven.annotation.ScenarioState.Resolution;
 
 import java.util.List;
 
@@ -13,13 +14,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 /** The "Then" stage: domain-specific assertions via AssertJ. */
 public class ThenOutcome extends Stage<ThenOutcome> {
 
-    @ExpectedScenarioState
+    @ExpectedScenarioState(resolution = Resolution.NAME)
     SimpleDrawing drawing;
 
-    @ExpectedScenarioState
+    @ExpectedScenarioState(resolution = Resolution.NAME)
     FigureGroup createdGroup;
 
-    @ExpectedScenarioState
+    @ExpectedScenarioState(resolution = Resolution.NAME)
     List<String> released;
 
     public ThenOutcome the_drawing_contains_a_single_group() {

@@ -6,6 +6,7 @@ import com.example.labs.group.SimpleDrawing;
 import com.tngtech.jgiven.Stage;
 import com.tngtech.jgiven.annotation.ProvidedScenarioState;
 import com.tngtech.jgiven.annotation.Quoted;
+import com.tngtech.jgiven.annotation.ScenarioState.Resolution;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,16 +14,16 @@ import java.util.List;
 /** The "Given" stage: sets up the drawing and selection for a scenario. */
 public class GivenDrawing extends Stage<GivenDrawing> {
 
-    @ProvidedScenarioState
+    @ProvidedScenarioState(resolution = Resolution.NAME)
     SimpleDrawing drawing = new SimpleDrawing();
 
-    @ProvidedScenarioState
+    @ProvidedScenarioState(resolution = Resolution.NAME)
     GroupingService service = new GroupingService();
 
-    @ProvidedScenarioState
+    @ProvidedScenarioState(resolution = Resolution.NAME)
     List<String> selectedFigures = new ArrayList<>();
 
-    @ProvidedScenarioState
+    @ProvidedScenarioState(resolution = Resolution.NAME)
     FigureGroup existingGroup;
 
     public GivenDrawing a_drawing_with_figures(@Quoted String... figures) {
